@@ -1,0 +1,279 @@
+*{
+    font-family: 'Geologica', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1300px !important;
+}
+
+.root-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+}
+
+
+/* Navigation Bar */
+
+body {
+    font-family: 'Geologica', sans-serif;
+    margin-top: 0px;
+    margin-right:10px;
+    max-width: fit-content;
+    margin:0 auto;
+}
+
+
+/* Nav Bar */
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#profile-img {
+    padding-right: 20px;
+}
+#profile-img img {
+     width:25px;
+     height:25px;
+}
+
+.left-nav , .right-nav , .center-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-nav , .right-nav {
+    column-gap: 15px;
+}
+
+#voice-search-btn {
+   padding:10px;
+}
+
+#search-input {
+    padding-left: 16px;
+}
+
+#search-input input[type="text"] {
+    padding: 20px;
+}
+
+#searchip {
+    width:550px;
+    height:35px;
+    box-sizing: border-box;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid grey;
+    border-right: 0px;
+    font-size:17px
+}
+
+
+#search-btn button {
+    border-radius: 0 20px 20px 0;
+    height: 42px;
+    padding-bottom:5px;
+    padding-right:10px;
+    width: 45px;
+    border:1px solid grey;
+    background-color:rgb(250,250,250);
+}
+
+#search-btn button:hover {
+    background-color: rgb(242,242,242);
+}
+
+button { 
+    cursor: pointer;
+    background-color: white;
+    border:0px;
+    border-radius: 40px;;
+    padding: 10px;
+}
+
+button:hover:not(#yt-logo button) {
+    background-color: rgb(242,242,242);
+}
+
+/* Embed Video */
+
+#embedplayer {
+    /* margin-left: 30px; */
+    margin-top: 15px;
+}
+.videostats  {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 30px; */
+}
+
+
+.video-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+#title {
+    margin: 5px 0px;
+    color: black;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.like-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    cursor: pointer;
+}
+.like {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+
+
+/* Comments Rendering */
+
+#comments-container {
+    margin-top: 20px;
+}
+
+.comments-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    max-height: 100vh;
+    overflow-y: scroll;
+ 
+}
+
+.owner-details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-top: 5px;
+}
+
+.profile{
+    display: flex;
+    gap: 20px;
+}
+.profile > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.comment {
+    display: flex;
+    gap: 20px;
+    padding: 15px 20px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.comment > img, .comment-reply > img {
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%;
+}
+.comment-right-half{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.comment span {
+    font-size: 14px !important;
+    color: gray
+}
+.comment p {
+    font-size: 14px;
+    width: 100%;
+    margin: 0px;
+}
+.options {
+    display: flex; gap: 20px;
+    cursor: pointer;
+}
+.reply{
+    background-color: transparent;
+    border: none ;
+    cursor: pointer;
+}
+
+.comment-reply{
+    padding-left: 10px;
+}
+
+
+/* Recommended Videos Styling */
+
+.chlogo-videotitle p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color:black;
+    font-weight: 500;
+}
+
+.card-elem {
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+  }
+
+  .card-elem:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+  }
+
+  .video-thumbnail img {
+    border-radius: 10px;
+    width:170px;
+    height: 95px;
+}
+
+.chname-videostats .videostats {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 5px;
+    flex-direction: row;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(115,115,115);
+    font-weight: 350;
+    padding-top: 5px;
+    
+}
+
+.chname-videostats p {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(115,115,115);
+}
+
+.chname-videostats {
+    padding-top:10px
+}
+
+
